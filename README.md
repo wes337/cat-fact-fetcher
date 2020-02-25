@@ -1,6 +1,6 @@
 # Cat Facts!
 
-Learn some cool facts about cats.
+Learn some cool facts about cats. See the live version [here](https://wes337.github.io/cat-fact-fetcher/)!
 
 Try it by running
 ```json5
