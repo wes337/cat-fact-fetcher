@@ -1,0 +1,57 @@
+@import "./colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background: $purple;
+  color: $dark;
+  overflow: hidden;
+
+  .App {
+    width: 75vw;
+    background: $white;
+    padding: 100px;
+    border-radius: 10px;
+
+    h1 {
+      font-size: 72px;
+      color: $d-blue
+    }
+  
+    ul {
+      list-style-type: none;
+
+      li {
+        font-size: 28px;
+        font-weight: 300;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      margin-top: 60px;
+      text-align: center;
+      background: $yellow;
+      color: $purple;
+      border: none;
+      font-size: 28px;
+      letter-spacing: 1.4px;
+      font-weight: 400;
+      border-radius: 10px;
+      padding: 15px 30px;
+    }
+  }
+}
