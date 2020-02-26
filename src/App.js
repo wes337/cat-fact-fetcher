@@ -8,7 +8,6 @@ function App() {
   const [loading, setLoading] = useState(false)
 
   const fetchData = async () => {
-    const abortController = new AbortController()
     try {
       setLoading(true)
       fetch('https://catfact.ninja/facts?limit=5', {
@@ -31,13 +30,11 @@ function App() {
 
   useEffect(() => {
     fetchData()
-  }, [])
 
-  useEffect(() => {
     return () => {
       abortController.abort()
     }
-  }, [abortController])
+  }, [])
 
   if (loading) {
     return <CatSpinner />
